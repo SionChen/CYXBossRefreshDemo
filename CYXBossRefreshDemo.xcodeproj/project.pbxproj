@@ -13,6 +13,9 @@
 		5582087020D9EECA00A4708E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5582086F20D9EECA00A4708E /* Assets.xcassets */; };
 		5582087320D9EECA00A4708E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5582087120D9EECA00A4708E /* LaunchScreen.storyboard */; };
 		5582087620D9EECA00A4708E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5582087520D9EECA00A4708E /* main.m */; };
+		5582087F20D9EF0B00A4708E /* CYXRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5582087E20D9EF0B00A4708E /* CYXRefreshHeader.m */; };
+		5582088220D9F17C00A4708E /* UIView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 5582088120D9F17C00A4708E /* UIView+Size.m */; };
+		55A329E720DA2F7D00E5DF10 /* UIScrollView+CYXRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A329E620DA2F7D00E5DF10 /* UIScrollView+CYXRefresh.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		5582087220D9EECA00A4708E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5582087420D9EECA00A4708E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5582087520D9EECA00A4708E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5582087D20D9EF0B00A4708E /* CYXRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYXRefreshHeader.h; sourceTree = "<group>"; };
+		5582087E20D9EF0B00A4708E /* CYXRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYXRefreshHeader.m; sourceTree = "<group>"; };
+		5582088020D9F17C00A4708E /* UIView+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Size.h"; sourceTree = "<group>"; };
+		5582088120D9F17C00A4708E /* UIView+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Size.m"; sourceTree = "<group>"; };
+		55A329E520DA2F7D00E5DF10 /* UIScrollView+CYXRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CYXRefresh.h"; sourceTree = "<group>"; };
+		55A329E620DA2F7D00E5DF10 /* UIScrollView+CYXRefresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CYXRefresh.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		5582086520D9EEC600A4708E /* CYXBossRefreshDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5582087C20D9EEF700A4708E /* CYXRresh */,
 				5582086620D9EEC600A4708E /* AppDelegate.h */,
 				5582086720D9EEC600A4708E /* AppDelegate.m */,
 				5582086920D9EEC600A4708E /* ViewController.h */,
@@ -69,6 +79,19 @@
 				5582087520D9EECA00A4708E /* main.m */,
 			);
 			path = CYXBossRefreshDemo;
+			sourceTree = "<group>";
+		};
+		5582087C20D9EEF700A4708E /* CYXRresh */ = {
+			isa = PBXGroup;
+			children = (
+				5582087D20D9EF0B00A4708E /* CYXRefreshHeader.h */,
+				5582087E20D9EF0B00A4708E /* CYXRefreshHeader.m */,
+				5582088020D9F17C00A4708E /* UIView+Size.h */,
+				5582088120D9F17C00A4708E /* UIView+Size.m */,
+				55A329E520DA2F7D00E5DF10 /* UIScrollView+CYXRefresh.h */,
+				55A329E620DA2F7D00E5DF10 /* UIScrollView+CYXRefresh.m */,
+			);
+			path = CYXRresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +165,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5582086B20D9EEC600A4708E /* ViewController.m in Sources */,
+				5582088220D9F17C00A4708E /* UIView+Size.m in Sources */,
+				55A329E720DA2F7D00E5DF10 /* UIScrollView+CYXRefresh.m in Sources */,
+				5582087F20D9EF0B00A4708E /* CYXRefreshHeader.m in Sources */,
 				5582087620D9EECA00A4708E /* main.m in Sources */,
 				5582086820D9EEC600A4708E /* AppDelegate.m in Sources */,
 			);
@@ -284,8 +310,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K999N3JYXU;
+				DEVELOPMENT_TEAM = RRQW8P957G;
 				INFOPLIST_FILE = CYXBossRefreshDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,8 +328,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K999N3JYXU;
+				DEVELOPMENT_TEAM = RRQW8P957G;
 				INFOPLIST_FILE = CYXBossRefreshDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
